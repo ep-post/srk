@@ -167,96 +167,6 @@ header.nav{
 .snap-card h3{ font-size:1.15rem; margin-bottom:0.4rem; }
 .snap-card p{ font-size:0.88rem; margin:0; max-width:none; }
 
-/* ---------- PILL BUTTONS (WFA-style) ---------- */
-.pill-btn{
-  display:inline-block; font-family:'IBM Plex Mono', monospace; font-size:0.78rem;
-  letter-spacing:0.06em; text-transform:uppercase; text-decoration:none;
-  padding:0.75rem 1.6rem; border-radius:999px; transition:transform 0.2s, box-shadow 0.2s;
-}
-.pill-btn.solid{ background:var(--accent); color:#FBF3E6; }
-.pill-btn.solid:hover{ background:var(--accent-deep); transform:translateY(-2px); }
-.pill-btn.outline{ border:1.5px solid var(--ink); color:var(--ink); }
-.pill-btn.outline:hover{ background:var(--ink); color:var(--paper); transform:translateY(-2px); }
-.pill-btn.on-dark{ border:1.5px solid rgba(251,243,230,0.7); color:#FBF3E6; }
-.pill-btn.on-dark:hover{ background:rgba(251,243,230,0.15); }
-
-/* ---------- IMPACT BAND ---------- */
-.impact-band{ background:var(--ink); color:var(--paper); padding:3.6rem 1.5rem; }
-.impact-inner{ max-width:1100px; margin:0 auto; text-align:center; }
-.impact-inner .eyebrow{ color:#EBB877; }
-.impact-inner p.intro{ color:#D9CDBB; max-width:56ch; margin:0 auto 2.2rem; font-size:1.02rem; }
-.impact-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:2rem; }
-@media (max-width:800px){ .impact-grid{ grid-template-columns:repeat(2, 1fr); } }
-.impact-grid .num{
-  font-family:'Fraunces', serif; font-weight:700; font-size:clamp(2rem, 4vw, 2.8rem);
-  color:#FBF3E6; display:block; line-height:1;
-}
-.impact-grid .label{
-  font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.05em;
-  text-transform:uppercase; color:#B7A88F; margin-top:0.5rem; display:block;
-}
-
-/* ---------- WHERE WE WORK ---------- */
-.where-section{ max-width:1100px; margin:0 auto; padding:4.5rem 1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
-@media (max-width:800px){ .where-section{ grid-template-columns:1fr; } }
-.where-section h2{ font-size:2rem; }
-.state-badges{ display:flex; flex-wrap:wrap; gap:0.7rem; margin:1.4rem 0 1.6rem; }
-.state-badges span{
-  font-family:'IBM Plex Mono', monospace; font-size:0.75rem; letter-spacing:0.04em;
-  border:1px solid var(--accent); color:var(--accent-deep); padding:0.45rem 0.9rem; border-radius:999px;
-}
-.where-visual{
-  aspect-ratio:1/1; border:1px solid var(--thread); background:var(--paper-deep);
-  display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
-}
-.where-visual svg{ width:80%; height:80%; }
-
-/* ---------- WHAT WE DO GRID ---------- */
-.whatwedo{ background:var(--paper-deep); padding:4.5rem 1.5rem; }
-.whatwedo-inner{ max-width:1100px; margin:0 auto; }
-.whatwedo-inner .eyebrow{ display:block; text-align:center; }
-.whatwedo-inner h2{ text-align:center; font-size:2rem; margin-bottom:2.4rem; }
-.wwd-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:1.4rem; }
-@media (max-width:900px){ .wwd-grid{ grid-template-columns:repeat(2, 1fr); } }
-@media (max-width:520px){ .wwd-grid{ grid-template-columns:1fr; } }
-.wwd-card{
-  background:#fff; border:1px solid var(--thread); padding:1.8rem 1.4rem;
-  text-decoration:none; color:var(--ink); text-align:center;
-  transition:transform 0.2s, box-shadow 0.2s;
-}
-.wwd-card:hover{ transform:translateY(-4px); box-shadow:0 10px 0 -6px var(--thread); }
-.wwd-card .wwd-num{
-  font-family:'Fraunces', serif; font-weight:700; font-size:1.6rem; color:var(--accent);
-  display:block; margin-bottom:0.8rem;
-}
-.wwd-card h3{
-  font-family:'IBM Plex Mono', monospace; font-size:0.85rem; letter-spacing:0.03em;
-  text-transform:uppercase; font-weight:500; margin-bottom:0; line-height:1.5;
-}
-
-/* ---------- CTA BAND ---------- */
-.cta-band{ position:relative; padding:5rem 1.5rem; display:flex; align-items:center; min-height:340px; }
-.cta-band .photo{ position:absolute; inset:0; }
-.cta-band::before{
-  content:''; position:absolute; inset:0;
-  background:linear-gradient(100deg, rgba(15,10,6,0.92) 0%, rgba(15,10,6,0.55) 55%, rgba(15,10,6,0.25) 100%);
-  z-index:1;
-}
-.cta-inner{ position:relative; z-index:2; max-width:1100px; margin:0 auto; width:100%; }
-.cta-inner .eyebrow{ color:#F5C989; }
-.cta-inner h2{ color:#FBF3E6; font-size:clamp(1.8rem, 3.4vw, 2.5rem); max-width:20ch; text-shadow:0 2px 16px rgba(0,0,0,0.5); }
-.cta-inner p{ color:#EFE6D6; max-width:48ch; text-shadow:0 1px 10px rgba(0,0,0,0.55); }
-
-/* ---------- FOOTER SOCIAL ROW ---------- */
-.footer-social{ display:flex; gap:0.9rem; margin:1.6rem 0; }
-.footer-social a{
-  width:38px; height:38px; border-radius:50%; border:1px solid rgba(251,243,230,0.4);
-  display:flex; align-items:center; justify-content:center; text-decoration:none;
-  color:#FBF3E6; font-family:'IBM Plex Mono', monospace; font-size:0.7rem;
-  transition:background 0.2s, border-color 0.2s;
-}
-.footer-social a:hover{ background:rgba(251,243,230,0.15); border-color:#FBF3E6; }
-
 .stat-row{
   display:flex; flex-wrap:wrap; gap:2.2rem; margin:1.2rem 0 1.6rem;
   padding:1.3rem 0; border-top:1px solid var(--thread); border-bottom:1px solid var(--thread);
@@ -347,10 +257,7 @@ blockquote{
   .march-card.with-photo .march-photo{ min-height:200px; }
 }
 .march-card.with-photo.two-photos .march-photo{
-  display:grid; grid-template-rows:1fr 1fr; gap:2px; min-height:440px;
-}
-@media (max-width:720px){
-  .march-card.with-photo.two-photos .march-photo{ min-height:380px; }
+  display:grid; grid-template-rows:1fr 1fr; gap:2px;
 }
 .march-card.with-photo.two-photos .march-photo .photo{ position:relative; inset:auto; }
 
